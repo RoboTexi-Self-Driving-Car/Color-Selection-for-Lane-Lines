@@ -11,11 +11,11 @@ xsize = image.shape[1]
 color_select = np.copy(image)
 
 # Define color selection criteria
-###### MODIFY THESE VARIABLES TO MAKE YOUR COLOR SELECTION
+
 red_threshold = 200
 green_threshold = 200
 blue_threshold = 200
-######
+
 
 rgb_threshold = [red_threshold, green_threshold, blue_threshold]
 
@@ -29,5 +29,4 @@ color_select[thresholds] = [0,0,0]
 # Display the image                 
 plt.imshow(color_select)
 
-# Uncomment the following code if you are running the code locally and wish to save the image
-# mpimg.imsave("test-after.png", color_select)
+mpimg.imsave("test-after.png", color_select)
